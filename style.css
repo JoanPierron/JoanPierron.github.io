@@ -372,13 +372,71 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
-.services{
+
+
+/* Skills */
+.skills{
     background: var(--bg-color);
+}
+.skills .container {
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+.skills .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    box-shadow: 0 4px 10px var(--main-color);
+    transition: 0.3s ease;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.skills .container .bar .info span {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+/* Work-study */
+.services{
+    background: var(--second-bg-color);
     color: black;
 }
 .services h2{
     margin-bottom: 5rem;
     color: white;
+}
+.context-work-study{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2rem;
 }
 .services-container{
     display: grid;
@@ -407,7 +465,7 @@ span{
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 2rem 5rem;
 }
 .service-box h4{
     font-size: 3rem;
@@ -421,6 +479,8 @@ span{
     line-height: 1.7;
     margin: auto;
 }
+
+/* Contact */
 .contact{
     background-color: var(--bg-color);
 }
@@ -456,12 +516,13 @@ span{
 .contact form .btn{
     margin-top: 2rem;
 }
+/* Footer */
 .footer{
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 .footer .social{
     text-align: center;
@@ -514,6 +575,18 @@ span{
     color: white;
 }
 
+@media(max-width:1450px){
+    .service-box .service-info {
+        padding: 0rem 2rem;
+    }
+    .skills .container .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-wrap: wrap;
+        gap: 1.8rem;
+    }
+}
+
 @media(max-width:1285px){
     html{
         font-size: 55%;
@@ -521,10 +594,9 @@ span{
     .services-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
-        margin: 0 5rem;
     }
 }
-@media(max-width:991px){
+@media(max-width:1020px){
     header{
         padding: 2rem 3%;
     }
@@ -554,8 +626,6 @@ span{
     .footer{
         padding: 2rem 3%;
     }
-}
-@media(max-width:895px){
     #menu-icon{
         display: block;
     }
@@ -604,5 +674,14 @@ span{
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
+    }
+    .context-work-study{
+        font-size: 15px;
+    }
+    .service-box .service-info {
+        padding: 0rem 2rem;
+    }
+    .service-box {
+        height: 300px;
     }
 }
