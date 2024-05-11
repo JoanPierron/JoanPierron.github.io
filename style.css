@@ -480,6 +480,54 @@ span{
     margin: auto;
 }
 
+/* Interests */
+.interests-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+
+}
+.interests-box img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.interests-box img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color), 
+                0 0 100px var(--main-color);
+}
+
+
+.indicators {
+    text-align: center;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+}
+
+
+
+
 /* Contact */
 .contact{
     background-color: var(--bg-color);

@@ -17,6 +17,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Accueil</a>
             <a href="#education">Formation</a>
+            <a href="#skills">Compétences</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
             <button id="toggleLanguageEN" class="inactive-lang">EN</button>
@@ -32,6 +33,9 @@
             <div class="social-icons">
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
                 <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="mailto:joanpierron14@laposte.net"><i class='bx bx-envelope'></i></a>
+                <a href="tel:+33 6 64 74 83 73"><i class='bx bx-phone'></i></a>
+
             </div>
 
             <div class="btn-group">
@@ -53,28 +57,18 @@
                 <div class="timeline-dot"></div>
                     <div class="timeline-date">2021</div>
                     <div class="timeline-content">
-                        <h3>High School</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae deserunt vitae nulla iusto ipsa ut magni, nesciunt porro enim magnam blanditiis? Laudantium reprehenderit rem sit minus, corrupti ipsa explicabo!</p>
+                        <h3>Baccalauréat Général</h3>
+                        <p>En juillet 2021 j'ai obtenu mon Baccalauréat Général avec les options Maths, Italien et SVT au Lycée René Descartes à Cournon d'Auvergne</p>
                     </div>
 
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022</div>
+                    <div class="timeline-date">2022-2023</div>
                     <div class="timeline-content">
-                        <h3>University</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae deserunt vitae nulla iusto ipsa ut magni, nesciunt porro enim magnam blanditiis? Laudantium reprehenderit rem sit minus, corrupti ipsa explicabo!</p>
-                    </div>
-               
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h3>Internship</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae deserunt vitae nulla iusto ipsa ut magni, nesciunt porro enim magnam blanditiis? Laudantium reprehenderit rem sit minus, corrupti ipsa explicabo!</p>
+                        <h3>1ère et 2ème année de BUT Informatique</h3>
+                        <p>Lors de ces deux premiers années de BUT j'ai eu l'occasion d'apprendre beaucoup de languages informatique mais aussi des matières comme l'économie ou la communication afin d'être un développeur complet</p>
                     </div>
                
             </div>
@@ -83,15 +77,15 @@
                 <div class="timeline-dot"></div>
                     <div class="timeline-date">2024</div>
                     <div class="timeline-content">
-                        <h3>Job 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae deserunt vitae nulla iusto ipsa ut magni, nesciunt porro enim magnam blanditiis? Laudantium reprehenderit rem sit minus, corrupti ipsa explicabo!</p>
+                        <h3>3ème année de BUT Informatique</h3>
+                        <p>Pour cette dernière année de BUT j'ai eu l'occasion d'être en alternance. J'ai pu apprendre beaucoup de choses notamment sur le travail en entreprise et l'organisation possible dans une équipe de développeur</p>
                     </div>
                
             </div>
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2 class="heading">Compétences</h2>
         <div class="container">
             <div class="row" id="skillsContainer">
@@ -173,7 +167,7 @@
 
 
     <section class="services" id="services">
-        <h2 class="heading">Services</h2>
+        <h2 class="heading">Alternance</h2>
         <p class="context-work-study">Pendant ma dernière année de BUT Informatique à Clermont-Ferrand, de 2023 à 2024, j'ai eu l'opportunité de suivre une alternance d'une durée d'un an. 
             Cette période a été extrêmement enrichissante à la fois sur le plan professionnel et personnel. 
             J'ai été impliqué dans le développement d'une application appelée PINK, qui fonctionne comme un vérificateur de données pour des référentiels contenant des informations erronées ou en double. 
@@ -195,6 +189,7 @@
                     <h4>Développement d'une application</h4>
                     <p>Pour cette partie développement j'ai eu l'occasion de créer une application en partant de zéro. Les technologies étaient Django un framework python,
                         HTML, CSS et JavaScript pour le front-end. J'ai pu apprendre à utiliser ces technologies et à les mettre en place pour créer une application web.
+                        Grâce à cette expérience, j'ai acquis une solide compréhension des technologies web modernes et de la manière dont elles s'assemblent pour créer des applications puissantes et intuitives.
                     </p>
                 </div>
             </div>
@@ -202,15 +197,19 @@
             <div class="service-box">
                 <div class="service-info">
                     <h4>Programmation Système</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
+                    <p>Je me suis un peu moins occupé de la partie système mais nous avons dû déployer l'application afin qu'elle soit disponible seulement pour les employés du client.
+                        Pour ce faire nous avons mis en place une partie CI/CD avec GitLab et Docker. Cela nous a permis de déployer l'application sur un serveur et de la mettre à jour facilement.
+                        Nous avons aussi utilisé Grafana pour surveiller les performances de l'application et de la base de données.
+                    </p>
                 </div>
             </div>
 
             <div class="service-box">
                 <div class="service-info">
                     <h4>Utilisation des données</h4>
-                    <p>Pour mettre en place cette application, il était important de pouvoir manipuler des données et plus particulièrement des référentiels et des répertoires
-                        dans le lac de données(data lake).
+                    <p>Pour mettre en place cette application, il était important de pouvoir manipuler des données et plus particulièrement des référentiels et des répertoires dans le lac de données(data lake).
+                        J'ai donc dû apprendre à manipuler ces données, à les importer, les modifier et les supprimer. J'ai aussi dû apprendre à les vérifier pour garantir la qualité des données.
+                        Pour cela, je devais vérifier que les données étaient uniques et qu'elles correspondaient bien aux critères attendus.
                     </p>
                 </div>
             </div>
@@ -227,6 +226,43 @@
             </div>
     </section>
 
+    <section class="interests" id="interests">
+        <h2 class="heading">Centres d'intérêts</h2>
+        <div class="interests-container">
+            <div class="interests-box" id="interest-1">
+                <div class="interests-text">
+                    <h4>Football</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusantium voluptatum expedita. Dolorum aut enim hic. Alias dignissimos nisi nobis dolores voluptatum similique quia architecto ipsum quo omnis, animi eos!
+                    </p> 
+                </div>
+                <img src="football.jpg" alt="">
+            </div>
+            <div class="interests-box" id="interest-2" style="display: none;">
+                <div class="interests-text">
+                    <h4>Musique</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sapiente distinctio amet deleniti quasi ducimus repudiandae. Tenetur, quas totam deserunt tempore exercitationem quos quibusdam et iure autem maiores ipsum qui!
+                    </p>
+                </div>
+                <img src="music.png" alt="">
+            </div>
+            <div class="interests-box" id="interest-3" style="display: none;">
+                <div class="interests-text">
+                    <h4>Voyages</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem animi officiis incidunt, dolorem blanditiis quam nesciunt consequuntur ullam iusto eaque, sapiente facilis ratione adipisci ipsum vitae pariatur omnis odit ad.
+                    </p>
+                </div>
+                <img src="travel.png" alt="">
+            </div>
+            <div class="indicators">
+                <span class="indicator active" onclick="showInterest(1)"></span>
+                <span class="indicator" onclick="showInterest(2)"></span>
+                <span class="indicator" onclick="showInterest(3)"></span>
+            </div>
+        </div>
+    </section>
+    
+    
+
     <section class="contact" id="contact">
         <h2 class="heading"><span>Me</span> Contacter</h2>
         <form action="https://formspree.io/f/xkndyeyb" method="POST">
@@ -242,7 +278,7 @@
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message" name="Message" required></textarea>
+                <textarea id="" cols="30" rows="10" placeholder="Votre message" name="Message" required></textarea>
                 <input type="submit" value="Envoyer Message" class="btn">
             </div>
         </form>

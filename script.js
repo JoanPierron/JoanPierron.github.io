@@ -60,3 +60,41 @@ document.getElementById("toggleLanguageFR").addEventListener("click", function()
         toggleLanguage('fr');
     }
 });
+
+let currentInterest = 1;
+const totalInterests = 3;
+
+function showInterest(interestIndex) {
+    const currentInterestElement = document.getElementById(`interest-${currentInterest}`);
+    currentInterestElement.style.display = 'none';
+    
+    const activeIndicator = document.querySelector('.indicator.active');
+    activeIndicator.classList.remove('active');
+    
+    currentInterest = interestIndex;
+    
+    const nextInterestElement = document.getElementById(`interest-${currentInterest}`);
+    nextInterestElement.style.display = 'flex';
+    
+    const newActiveIndicator = document.querySelectorAll('.indicator')[currentInterest - 1];
+    newActiveIndicator.classList.add('active');
+}
+
+function handleSwipe(event) {
+    if (event.deltaX > 0) {
+        // Swipe right
+        if (currentInterest > 1) {
+            showInterest(currentInterest - 1);
+        }
+    } else {
+        // Swipe left
+        if (currentInterest < totalInterests) {
+            showInterest(currentInterest + 1);
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const interestsContainer = document.querySelector('.interests-container');
+    interestsContainer.addEventListener('wheel', handleSwipe);
+});
