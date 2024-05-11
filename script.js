@@ -67,34 +67,17 @@ const totalInterests = 3;
 function showInterest(interestIndex) {
     const currentInterestElement = document.getElementById(`interest-${currentInterest}`);
     currentInterestElement.style.display = 'none';
-    
-    const activeIndicator = document.querySelector('.indicator.active');
-    activeIndicator.classList.remove('active');
-    
+
+    const indicator = document.querySelector('.indicator.active');
+    if (indicator) {
+        indicator.classList.remove('active');
+    }
+
     currentInterest = interestIndex;
-    
+
     const nextInterestElement = document.getElementById(`interest-${currentInterest}`);
     nextInterestElement.style.display = 'flex';
-    
-    const newActiveIndicator = document.querySelectorAll('.indicator')[currentInterest - 1];
-    newActiveIndicator.classList.add('active');
-}
 
-function handleSwipe(event) {
-    if (event.deltaX > 0) {
-        // Swipe right
-        if (currentInterest > 1) {
-            showInterest(currentInterest - 1);
-        }
-    } else {
-        // Swipe left
-        if (currentInterest < totalInterests) {
-            showInterest(currentInterest + 1);
-        }
-    }
+    const activeIndicator = document.querySelectorAll('.indicator')[currentInterest - 1];
+    activeIndicator.classList.add('active');
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const interestsContainer = document.querySelector('.interests-container');
-    interestsContainer.addEventListener('wheel', handleSwipe);
-});

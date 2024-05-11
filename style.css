@@ -64,6 +64,9 @@ body {
 .navbar button {
     margin-left: 2rem;
 }
+#toggleLanguageFR {
+    margin-left: 1rem;
+}
 .active-lang{
     font-size: 1.8rem;
     color: black;
@@ -485,13 +488,32 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 6rem;
     margin-top: 5rem;
 
 }
+.interests-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2rem;
+}
+
+.interests-text h4{
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+}
+
+.interests-text p{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
 .interests-box img {
     position: relative;
-    width: 32vw;
+    height: 40vh;
+    width: 30vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -506,6 +528,7 @@ span{
 
 
 .indicators {
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -519,7 +542,7 @@ span{
     cursor: pointer;
 }
 
-.active {
+.indicator.active {
     width: 15px;
     height: 15px;
     background-color: white;
@@ -530,7 +553,7 @@ span{
 
 /* Contact */
 .contact{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 .contact h2{
     margin-bottom: 3rem;
@@ -748,4 +771,18 @@ span{
         text-align: center;
         margin: 5rem 0;
     }
+    
+    .interests-text h4{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .interests-text p{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .interests-box img {
+        height: 20vh;
+        width: 30vw;
+    }
+    
 }
