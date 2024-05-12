@@ -81,3 +81,37 @@ function showInterest(interestIndex) {
     const activeIndicator = document.querySelectorAll('.indicator')[currentInterest - 1];
     activeIndicator.classList.add('active');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const interestsSection = document.getElementById('interests');
+
+    let startX;
+
+    interestsSection.addEventListener('touchstart', function(e) {
+        startX = e.changedTouches[0].clientX;
+    });
+
+    interestsSection.addEventListener('touchend', function(e) {
+        const endX = e.changedTouches[0].clientX;
+        const diffX = startX - endX;
+
+        if (Math.abs(diffX) > 50) {
+            if (diffX > 0) {
+                // Swipe left
+                let nextInterest = currentInterest + 1;
+                if (nextInterest > totalInterests) {
+                    nextInterest = 1;
+                }
+                showInterest(nextInterest);
+            } else {
+                // Swipe right
+                let prevInterest = currentInterest - 1;
+                if (prevInterest < 1) {
+                    prevInterest = totalInterests;
+                }
+                showInterest(prevInterest);
+            }
+        }
+    });
+});
+
