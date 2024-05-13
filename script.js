@@ -97,14 +97,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (Math.abs(diffX) > 50) {
             if (diffX > 0) {
-                // Swipe left
                 let nextInterest = currentInterest + 1;
                 if (nextInterest > totalInterests) {
                     nextInterest = 1;
                 }
                 showInterest(nextInterest);
             } else {
-                // Swipe right
                 let prevInterest = currentInterest - 1;
                 if (prevInterest < 1) {
                     prevInterest = totalInterests;
