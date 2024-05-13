@@ -423,11 +423,11 @@ span{
 }
 
 /* Work-study */
-.appritenceship{
+.Apprenticeship{
     background: var(--second-bg-color);
     color: black;
 }
-.appritenceship h2{
+.Apprenticeship h2{
     margin-bottom: 5rem;
     color: white;
 }
@@ -440,13 +440,13 @@ span{
     font-weight: 500;
     margin-bottom: 2rem;
 }
-.appritenceship-container{
+.Apprenticeship-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5rem;
 }
-.appritenceship-box{
+.Apprenticeship-box{
     background-color: var(--main-color);
     height: 300px;
     border-radius: 3rem;
@@ -454,13 +454,13 @@ span{
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.appritenceship-box:hover{
+.Apprenticeship-box:hover{
     background: white;
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.appritenceship-box .appritenceship-info{
+.Apprenticeship-box .Apprenticeship-info{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -469,12 +469,12 @@ span{
     align-items: baseline;
     padding: 2rem 5rem;
 }
-.appritenceship-box h4{
+.Apprenticeship-box h4{
     font-size: 3rem;
     font-weight: 800;
     line-height: 1.5;
 }
-.appritenceship-info p{
+.Apprenticeship-info p{
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.7;
@@ -647,7 +647,7 @@ span{
 }
 
 @media(max-width:1450px){
-    .appritenceship-box .appritenceship-info {
+    .Apprenticeship-box .Apprenticeship-info {
         padding: 0rem 2rem;
     }
     .skills .container .row {
@@ -656,10 +656,10 @@ span{
         flex-wrap: wrap;
         gap: 1.8rem;
     }
-    .appritenceship-info p {
+    .Apprenticeship-info p {
         line-height: 1.4;
     }
-    .appritenceship-box h4 {
+    .Apprenticeship-box h4 {
         line-height: 1.4;
     }
 }
@@ -668,7 +668,7 @@ span{
     html{
         font-size: 55%;
     }
-    .appritenceship-container{
+    .Apprenticeship-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
     }
@@ -694,7 +694,7 @@ span{
     .timeline-dot{
         left: 0;
     }
-    .appritenceship{
+    .Apprenticeship{
         padding-bottom: 7rem;
     }
     .contact form{
@@ -746,16 +746,16 @@ span{
     .home-img img{
         width: 40vw;
     }
-    .appritenceship h2{
+    .Apprenticeship h2{
         margin-bottom: 3rem;
     }
-    .appritenceship-container{
+    .Apprenticeship-container{
         grid-template-columns: repeat(1,1fr);
     }
     .context-work-study{
         font-size: 15px;
     }
-    .appritenceship-box .appritenceship-info {
+    .Apprenticeship-box .Apprenticeship-info {
         padding: 1rem 1rem;
     }
     .skills .container .bar {
@@ -785,10 +785,10 @@ span{
         font-size: 1.8rem;
         font-weight: 400;
     }
-    .appritenceship-box h4 {
+    .Apprenticeship-box h4 {
         font-size: 2.2rem;
     }
-    .appritenceship-info p {
+    .Apprenticeship-info p {
         margin-top: 1rem;
         font-size: 1.6rem;
     }
