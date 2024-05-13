@@ -778,7 +778,7 @@ span{
         flex-direction: column;
     }
     .interests-text h4{
-        font-size: 2rem;
+        font-size: 2.4rem;
         font-weight: 600;
     }
     .interests-text p{
@@ -786,11 +786,11 @@ span{
         font-weight: 400;
     }
     .appritenceship-box h4 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     .appritenceship-info p {
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
 }
