@@ -149,6 +149,7 @@ span{
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
+    text-align: justify;
 }
 .social-icons a {
     display: inline-flex;
@@ -356,12 +357,14 @@ span{
     color: white;
     margin: 0 0 10px;
     font-weight: 500;
+    text-align: left;
 }
 .timeline-content p{
     font-size: 16px;
     color: white;
     font-weight: 300;
     line-height: 22px;
+    text-align: justify;
 }
 
 ::-webkit-scrollbar{
@@ -439,12 +442,14 @@ span{
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 .Apprenticeship-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5rem;
+    padding-top: 5rem;
 }
 .Apprenticeship-box{
     background-color: var(--main-color);
@@ -479,6 +484,7 @@ span{
     font-weight: 600;
     line-height: 1.7;
     margin: auto;
+    text-align: justify;
 }
 
 /* Interests */
@@ -507,6 +513,7 @@ span{
     font-size: 2rem;
     font-weight: 500;
     color: white;
+    text-align: justify;
 }
 .interests-box img {
     position: relative;
@@ -731,6 +738,7 @@ span{
     .home{
         flex-direction: column-reverse;
         margin: 5rem 4rem;
+        gap: 5rem;
     }
     .home-content h3{
         font-size: 2.6rem;
